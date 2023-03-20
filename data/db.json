@@ -1,0 +1,76 @@
+{ 
+  "events": [
+    {
+      "id": 1,
+      "title": "Clean 1",
+      "date": "March 21 2023",
+      "time": "02:00",
+      "location":"Manila Bay",
+      "description": "clean clean drive",
+      "organizer": "Dan Ray Rollan",
+      "category": "preservation",
+      "attendees": [
+        {
+          "id": "attendees1",
+          "name": "Xavier Dray"
+        },
+        {
+          "id": "attendees2",
+          "name": "Marika Erika"
+        },
+        {
+          "id": "attendees3",
+          "name": "Xavi Dei"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Vue Mastery 2",
+      "date": "March 21 2023",
+      "time": "02:00",
+      "location":"Manila Bay",
+      "description": "clean clean drive",
+      "organizer": "Dan Ray Rollan",
+      "category": "preservation",
+      "attendees": [
+        {
+          "id": "attendees1",
+          "name": "Xavier Dray"
+        },
+        {
+          "id": "attendees2",
+          "name": "Marika Erika"
+        },
+        {
+          "id": "attendees3",
+          "name": "Xavi Dei"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Manila Hackaton",
+      "date": "March 21 2023",
+      "time": "02:00",
+      "location":"Manila Bay",
+      "description": "clean clean drive",
+      "organizer": "Dan Ray Rollan",
+      "category": "preservation",
+      "attendees": [
+        {
+          "id": "attendees1",
+          "name": "Xavier Dray"
+        },
+        {
+          "id": "attendees2",
+          "name": "Marika Erika"
+        },
+        {
+          "id": "attendees3",
+          "name": "Xavi Dei"
+        }
+      ]
+    }
+  ]
+}
