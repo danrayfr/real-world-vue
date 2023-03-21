@@ -1,76 +1,112 @@
-{ 
+{
   "events": [
     {
       "id": 1,
-      "title": "Clean 1",
-      "date": "March 21 2023",
-      "time": "02:00",
-      "location":"Manila Bay",
-      "description": "clean clean drive",
-      "organizer": "Dan Ray Rollan",
-      "category": "preservation",
+      "title": "Beach Cleanup",
+      "date": "Aug 28 2018",
+      "time": "10:00",
+      "location": "Daytona Beach",
+      "description": "Let's clean up this beach.",
+      "organizer": "Adam Jahr",
+      "category": "sustainability",
       "attendees": [
         {
-          "id": "attendees1",
-          "name": "Xavier Dray"
+          "id": "abc123",
+          "name": "Adam Jahr"
         },
         {
-          "id": "attendees2",
-          "name": "Marika Erika"
+          "id": "def456",
+          "name": "Gregg Pollack"
         },
         {
-          "id": "attendees3",
-          "name": "Xavi Dei"
+          "id": "ghi789",
+          "name": "Beth Swanson"
+        },
+        {
+          "id": "jkl101",
+          "name": "Mary Gordon"
         }
       ]
     },
     {
       "id": 2,
-      "title": "Vue Mastery 2",
-      "date": "March 21 2023",
-      "time": "02:00",
-      "location":"Manila Bay",
-      "description": "clean clean drive",
-      "organizer": "Dan Ray Rollan",
-      "category": "preservation",
+      "title": "Park Cleanup",
+      "date": "Nov 12 2018",
+      "time": "12:00",
+      "location": "132 N Magnolia Street, Orlando, Florida",
+      "description": "We're going to clean up this park.",
+      "organizer": "Adam Jahr",
+      "category": "nature",
       "attendees": [
         {
-          "id": "attendees1",
-          "name": "Xavier Dray"
+          "id": "ghi789",
+          "name": "Beth Swanson"
         },
         {
-          "id": "attendees2",
-          "name": "Marika Erika"
-        },
-        {
-          "id": "attendees3",
-          "name": "Xavi Dei"
+          "id": "jkl101",
+          "name": "Mary Gordon"
         }
       ]
     },
     {
       "id": 3,
-      "title": "Manila Hackaton",
-      "date": "March 21 2023",
-      "time": "02:00",
-      "location":"Manila Bay",
-      "description": "clean clean drive",
-      "organizer": "Dan Ray Rollan",
-      "category": "preservation",
+      "title": "Pet Adoption Day",
+      "date": "Dec 2 2018",
+      "time": "12:00",
+      "location": "132 N Magnolia Street, Orlando, Florida",
+      "description": "Help animals find new homes.",
+      "organizer": "Gregg Pollack",
+      "category": "animal welfare",
       "attendees": [
         {
-          "id": "attendees1",
-          "name": "Xavier Dray"
+          "id": "abc123",
+          "name": "Adam Jahr"
         },
         {
-          "id": "attendees2",
-          "name": "Marika Erika"
+          "id": "ghi789",
+          "name": "Beth Swanson"
         },
         {
-          "id": "attendees3",
-          "name": "Xavi Dei"
+          "id": "jkl101",
+          "name": "Mary Gordon"
         }
       ]
+    },
+    {
+      "id": 2550420,
+      "user": {
+        "id": "1",
+        "name": "Dan Ray Rollan"
+      },
+      "category": "open-source",
+      "organizer": {
+        "id": "1",
+        "name": "Dan Ray Rollan"
+      },
+      "title": "Onboarding newly hired",
+      "description": "Bootcamp/Training to newly hired gorated developer.",
+      "location": "Gorated Innovation Labs",
+      "date": "2023-04-10T16:00:00.000Z",
+      "time": "8:00",
+      "attendees": []
+    },
+    {
+      "id": 8070731,
+      "user": {
+        "id": "1",
+        "name": "Dan Ray Rollan"
+      },
+      "category": "community",
+      "organizer": {
+        "id": "1",
+        "name": "Dan Ray Rollan"
+      },
+      "title": "Welcoming Interns",
+      "description": "Internship discussion and requirements.",
+      "location": "Google Meet, Online",
+      "date": "2023-05-30T16:00:00.000Z",
+      "time": "14:00",
+      "attendees": []
     }
   ]
 }

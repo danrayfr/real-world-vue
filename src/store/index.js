@@ -1,4 +1,5 @@
 import { createStore } from 'vuex'
+import EventService from '@/services/EventService'
 
 export default createStore({
   state: {
@@ -12,12 +13,7 @@ export default createStore({
       'community',
       'open-source'
     ],
-    events: [
-      { id: 1, title: '...', organizer: '...'},
-      { id: 2, title: '...', organizer: '...'},
-      { id: 3, title: '...', organizer: '...'},
-      { id: 4, title: '...', organizer: '...'},
-    ]
+    events: [],
   },
   getters: {
     catLength: state => {
@@ -28,8 +24,16 @@ export default createStore({
     }
   },
   mutations: {
+    ADD_EVENT(state, event) {
+      state.events.push(event)
+    }
   },
   actions: {
+    createEvent({commit}, event) {
+      return EventService.postEvent(event).then(()=> {
+        commit('ADD_EVENT', event) 
+      })
+    }
   },
   modules: {
   }
