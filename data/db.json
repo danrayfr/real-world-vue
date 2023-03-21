@@ -249,6 +249,60 @@
       "date": "2023-04-10T16:00:00.000Z",
       "time": "8:00",
       "attendees": []
+    },
+    {
+      "id": 79734,
+      "user": {
+        "id": "1",
+        "name": "Dan Ray Rollan"
+      },
+      "category": "community",
+      "organizer": {
+        "id": "1",
+        "name": "Dan Ray Rollan"
+      },
+      "title": "zero to hero Ruby on Rails developer",
+      "description": "I will share my knowledge and experience how I change specialty and become a ruby on rails + full stack developer.",
+      "location": "Google Meet/Online",
+      "date": "2023-04-27T16:00:00.000Z",
+      "time": "14:00",
+      "attendees": []
+    },
+    {
+      "id": 582503,
+      "user": {
+        "id": "1",
+        "name": "Dan Ray Rollan"
+      },
+      "category": "education",
+      "organizer": {
+        "id": "1",
+        "name": "Dan Ray Rollan"
+      },
+      "title": "ROR 101",
+      "description": "Discuss ROR ",
+      "location": "google meet/online",
+      "date": "2023-04-29T16:00:00.000Z",
+      "time": "17:00",
+      "attendees": []
+    },
+    {
+      "id": 9689045,
+      "user": {
+        "id": "1",
+        "name": "Dan Ray Rollan"
+      },
+      "category": "consistency",
+      "organizer": {
+        "id": "1",
+        "name": "Dan Ray Rollan"
+      },
+      "title": "Practice Everyday",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "location": "Manila",
+      "date": "2023-05-01T16:00:00.000Z",
+      "time": "20:00",
+      "attendees": []
     }
   ]
 }

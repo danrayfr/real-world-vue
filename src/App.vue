@@ -1,12 +1,14 @@
 <template>
   <NavBar />
+  <NotificationContainer />
   <router-view :key="$route.fullPath"/>
 </template>
 
 <script>
 import NavBar from "@/components/NavBar"
+import NotificationContainer from "@/components/NotificationContainer"
 export default {
-  components: { NavBar }
+  components: { NavBar, NotificationContainer }
 }
 </script>
 
