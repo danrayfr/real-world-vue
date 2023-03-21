@@ -13,7 +13,7 @@ export default createStore({
       'food',
       'community',
       'open-source'
-    ],
+    ]
   },
   modules: {
     user,

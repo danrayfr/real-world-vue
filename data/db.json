@@ -321,6 +321,24 @@
       "date": "2023-02-28",
       "time": "14:00",
       "attendees": []
+    },
+    {
+      "id": 4268987,
+      "user": {
+        "id": "1",
+        "name": "Dan Ray Rollan"
+      },
+      "category": "open-source",
+      "organizer": {
+        "id": "1",
+        "name": "Dan Ray Rollan"
+      },
+      "title": "Introduction to Open Sourcing",
+      "description": "open source is the key to startup.",
+      "location": "google meet",
+      "date": "2023-03-17",
+      "time": "12:00",
+      "attendees": []
     }
   ]
 }
