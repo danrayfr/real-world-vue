@@ -28,7 +28,7 @@
 
       <div class="field">
         <label>Date</label>
-        <datepicker v-model="event.date" placeholder="Select a date"/>
+        <datepicker :modelValue="dateObject" @update:modelValue="event.date = $event.toISOString().slice(0, 10)" placeholder="Select a date"/>
       </div>
 
       <div class="field">
@@ -57,6 +57,16 @@ export default {
       categories: this.$store.state.categories,
       event: this.createFreshEventObject()
     }
+  },
+  computed: {
+    dateObject: {
+      get() {
+        return this.event.date ? new Date(this.event.date) : null;
+      },
+      set(value) {
+        this.event.date = value.toISOString().slice(0, 10);
+      },
+    },
   },
   methods: {
     createEvent() {
