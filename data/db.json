@@ -339,6 +339,24 @@
       "date": "2023-03-17",
       "time": "12:00",
       "attendees": []
+    },
+    {
+      "id": 4157026,
+      "user": {
+        "id": "1",
+        "name": "Dan Ray Rollan"
+      },
+      "category": "open-source",
+      "organizer": {
+        "id": "1",
+        "name": "Dan Ray Rollan"
+      },
+      "title": "Rails Hackaton",
+      "description": "open for all",
+      "location": "google meet",
+      "date": "2023-03-29",
+      "time": "9:00",
+      "attendees": []
     }
   ]
 }

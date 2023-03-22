@@ -4,6 +4,8 @@ import EventShow from '@/views/EventShow'
 import EventCreate from '@/views/EventCreate'
 import NProgress from 'nprogress'
 import store from '@/store/index'
+import NotFound from '@/views/NotFound'
+import NetWorkIssue from '@/views/NetworkIssue'
 
 const routes = [
   {
@@ -22,6 +24,14 @@ const routes = [
         to.params.event = event
         next()
       })
+      .catch(error => {
+        if (error.response && error.response.status == 404) {
+          next({ name:'404', params: { resource: 'event'} })
+        } else { 
+          next({ name: 'network-issue' })
+        }
+      })
+    
     }
   },
 
@@ -29,6 +39,21 @@ const routes = [
     path: '/event/create',
     name: 'event-create',
     component: EventCreate
+  },
+  {
+    path: '/404/:resource',
+    name: '404',
+    component: NotFound,
+    props: true,
+  },
+  {
+    path: '/network-issue',
+    name: 'network-issue',
+    component: NetWorkIssue
+  }, 
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: { name: '404', params: { resource: 'page'}}, 
   }
 ]
 
