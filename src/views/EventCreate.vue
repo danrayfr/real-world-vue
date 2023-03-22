@@ -2,11 +2,7 @@
   <div>
     <h1>Create an Event</h1>
     <form @submit.prevent="createEvent">
-      <label>Select a category</label>
-      <select v-model="event.category">
-        <option v-for="cat in categories" :key="cat">{{ cat }}</option>
-      </select>
-
+      <BaseSelect label="Select a category" :options="categories" v-model="event.category"/>
       <h3>Name & describe your event</h3>
       <BaseInput v-model="event.title" label="Title" type="text" placeholder="Add title" />
       <BaseInput v-model="event.description" label="Description" type="text" placeholder="Add a description" />
@@ -18,13 +14,7 @@
         <datepicker :modelValue="dateObject" @update:modelValue="event.date = $event.toISOString().slice(0, 10)" placeholder="Select a date"/>
       </div>
 
-      <div class="field">
-        <label>Select a time</label>
-        <select v-model="event.time">
-          <option v-for="time in times" :key="time">{{ time }}</option>
-        </select>
-      </div>
-
+      <BaseSelect label="Select a time" :options="times" v-model="event.time"/>
       <input type="submit" class="button -fill-gradient" value="Submit"/>
     </form>
   </div>
@@ -33,9 +23,10 @@
 <script>
 import Datepicker from 'vue3-datepicker'
 import BaseInput from '@/components/BaseInput'
+import BaseSelect from '@/components/BaseSelect'
 import NProgress from 'nprogress'
 export default {
-  components: { Datepicker, BaseInput },
+  components: { Datepicker, BaseInput, BaseSelect },
   data() {
     const times = []
     for (let i = 1; i <= 24; i++) { 
