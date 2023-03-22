@@ -8,22 +8,9 @@
       </select>
 
       <h3>Name & describe your event</h3>
-      <div class="field">
-        <label>Title</label>
-        <input v-model="event.title" type="text" placeholder="Add an event title"/>
-      </div>
-
-      <div class="field">
-        <label>Description</label>
-        <input v-model="event.description" type="text" placeholder="Add a description"/>
-      </div>
-
-      <h3>Where is your event?</h3>
-      <div class="field">
-        <label>Location</label>
-        <input v-model="event.location" type="text" placeholder="Add a location"/>
-      </div>
-
+      <BaseInput v-model="event.title" label="Title" type="text" placeholder="Add title" />
+      <BaseInput v-model="event.description" label="Description" type="text" placeholder="Add a description" />
+      <BaseInput v-model="event.location" label="Location" type="email" placeholder="Add a location" />
       <h3>When is your event?</h3>
 
       <div class="field">
@@ -45,9 +32,10 @@
 
 <script>
 import Datepicker from 'vue3-datepicker'
+import BaseInput from '@/components/BaseInput'
 import NProgress from 'nprogress'
 export default {
-  components: { Datepicker },
+  components: { Datepicker, BaseInput },
   data() {
     const times = []
     for (let i = 1; i <= 24; i++) { 

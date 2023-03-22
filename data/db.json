@@ -357,6 +357,24 @@
       "date": "2023-03-29",
       "time": "9:00",
       "attendees": []
+    },
+    {
+      "id": 7240865,
+      "user": {
+        "id": "1",
+        "name": "Dan Ray Rollan"
+      },
+      "category": "nature",
+      "organizer": {
+        "id": "1",
+        "name": "Dan Ray Rollan"
+      },
+      "title": "",
+      "description": "321",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
     }
   ]
 }
