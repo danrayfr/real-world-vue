@@ -6,6 +6,7 @@ import NProgress from 'nprogress'
 import store from '@/store/index'
 import NotFound from '@/views/NotFound'
 import NetWorkIssue from '@/views/NetworkIssue'
+import Example from '@/views/Example'
 
 const routes = [
   {
@@ -54,6 +55,10 @@ const routes = [
   {
     path: '/:pathMatch(.*)*',
     redirect: { name: '404', params: { resource: 'page'}}, 
+  },
+  {
+    path: '/example',
+    component: Example
   }
 ]
 
