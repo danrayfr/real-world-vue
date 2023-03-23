@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Events for {{ user.user.name }}</h1>
+    <h1>Events</h1>
     <EventCard v-for="event in event.events" :key="event.id" :event="event"/>
     <template v-if="page != 1">
       <router-link :to="{ name: 'event-list', query: { page: page - 1 } }" rel="prev">
@@ -17,22 +17,41 @@
 <script>
 import EventCard from '@/components/EventCard'
 import { mapState } from 'vuex'
+import store from '@/store/index'
+
+function getPageEvents(to, next) {
+  const currentPage = parseInt(to.query.page) || 1
+  store.dispatch('event/fetchEvents', {
+    page: currentPage
+  }).then(() => {
+    to.params.page = currentPage
+    next()
+  })
+}
+
 export default {
   components: { EventCard },
+  props: {
+    page: {
+      type: Number,
+      required: true
+    }
+  },
+  beforeRouteEnter(to, from, next) {
+    getPageEvents(to, next)
+  },
+  beforeRouteUpdate(to, from, next) {
+    getPageEvents(to, next)
+  },
   created() {
-    this.perPage = 3 
-
     this.$store.dispatch('event/fetchEvents', {
       perPage: this.perPage,
       page: this.page 
     })
   },
   computed: {
-    page() { 
-      return parseInt(this.$route.query.page) || 1
-    },
     hasNextPage() {
-      return this.event.eventsTotal > this.page * this.perPage
+      return this.event.eventsTotal > this.page * this.event.perPage
     },
     ...mapState(['event', 'user'])
   }

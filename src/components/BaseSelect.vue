@@ -1,7 +1,16 @@
 <template>
   <div class="field">
     <label v-if="label"> {{ label }}</label>
-    <input @input="updateValue" :value="modelValue" :type="type" :placeholder="placeholder" v-bind="$attrs">
+    <select @change="updateValue" :value="modelValue" v-bind="$attrs">
+      <option 
+        v-for="option in options" 
+        :value="option"
+        :key="option"
+        :selected="option === value"
+        >
+        {{ option }}
+      </option>
+    </select>
   </div>
 </template>
 
@@ -9,19 +18,16 @@
 export default {
   inheritAttrs: false,
   props: {
+    options: { 
+      type: Array,
+      required: true
+    },
     label: {
       type: String,
       default: ''
     },
     modelValue: {
       type: [String, Number],
-      default: ''
-    },
-    type: {
-      type: String,
-    }, 
-    placeholder: {
-      type: String, 
       default: ''
     }
   },
@@ -32,7 +38,3 @@ export default {
   } 
 }
 </script>
-
-<style scoped>
-
-</style>
